@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "64035a5af454e83e",
@@ -160,13 +160,23 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "36c3e23c99bc67f9",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
           }
         ],
         "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,7 +190,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f3d57c460cedb74b",
+  "active": "a4493f8db67f18f5",
   "lastOpenFiles": [
     "Welcome.md"
   ]
