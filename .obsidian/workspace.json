@@ -11,10 +11,14 @@
             "id": "7ff118175e4e3120",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "10_Triffiny/Daily/2026/02-February/2026-02-11.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2026-02-11"
             }
           }
         ]
@@ -90,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "99_System/Templates/Commander v1.md",
+                "file": "10_Triffiny/Daily/2026/02-February/2026-02-11.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Commander v1"
+              "title": "Backlinks for 2026-02-11"
             }
           },
           {
@@ -109,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "99_System/Templates/Commander v1.md",
+                "file": "10_Triffiny/Daily/2026/02-February/2026-02-11.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Commander v1"
+              "title": "Outgoing links from 2026-02-11"
             }
           },
           {
@@ -138,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "99_System/Templates/Commander v1.md",
+                "file": "10_Triffiny/Daily/2026/02-February/2026-02-11.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Commander v1"
+              "title": "Outline of 2026-02-11"
             }
           },
           {
@@ -172,7 +176,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 734.5
+    "width": 649.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -189,8 +193,13 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "a4493f8db67f18f5",
+  "active": "7ff118175e4e3120",
   "lastOpenFiles": [
+    "10_Journal/Daily/2026/02-February/2026-02-08.md",
+    "10_Journal/Daily/2026/02-February",
+    "10_Journal/Daily/2026",
+    "10_Journal/Daily",
+    "10_Journal",
     "20_Efforts/Long Term Goals/AI/Tasklist after purchasing either huge GPU or lot of ai API credits.md",
     "10_Triffiny/Daily/2026/02-February/2026-02-11.md",
     "10_Triffiny/Daily/2026/02-February/2026-02-10.md",
@@ -206,7 +215,6 @@
     "30_Knowledge/Trading",
     "copilot/copilot-conversations/how_to_add_a_collapsable_component_here@20260209_014903.md",
     "copilot/copilot-conversations",
-    "10_Journal/Daily/2026/02-February/2026-02-08.md",
     "99_System/Templates/Commander v1.md",
     "99_System/Templates/New Innovation.md",
     "copilot/copilot-custom-prompts/Clip Web Page.md",
@@ -221,12 +229,7 @@
     "copilot/copilot-custom-prompts/Emojify.md",
     "copilot/copilot-custom-prompts/Explain like I am 5.md",
     "copilot/copilot-custom-prompts/Simplify.md",
-    "copilot/copilot-custom-prompts/Summarize.md",
     "copilot/copilot-custom-prompts",
-    "copilot",
-    "10_Triffiny/Daily/2026/02-February",
-    "10_Triffiny/Daily/2026",
-    "20_Efforts/Short Term Goals",
     "Untitled.canvas"
   ]
 }
