@@ -1,5 +1,8 @@
 [
   "obsidian-git",
   "calendar",
-  "dataview"
+  "dataview",
+  "obsidian-tracker",
+  "quickadd",
+  "obsidian-local-rest-api"
 ]

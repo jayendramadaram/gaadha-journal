@@ -4,39 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "82abbe860296aa1b",
+        "id": "70b7e0b5034952ae",
         "type": "tabs",
         "children": [
           {
-            "id": "8c83494c0fb6bf42",
+            "id": "7ff118175e4e3120",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "99_System/Templates/Daily Game v2.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Daily Game v2"
-            }
-          },
-          {
-            "id": "61921977ed2efab4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "99_System/Templates/Daily Game v2.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Daily Game v2"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -68,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#system-design",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 258.5110321044922
   },
   "right": {
     "id": "64035a5af454e83e",
@@ -109,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "99_System/Templates/Daily Game v2.md",
+                "file": "99_System/Templates/Commander v1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +100,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Daily Game v2"
+              "title": "Backlinks for Commander v1"
             }
           },
           {
@@ -128,12 +109,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "99_System/Templates/Daily Game v2.md",
+                "file": "99_System/Templates/Commander v1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Daily Game v2"
+              "title": "Outgoing links from Commander v1"
             }
           },
           {
@@ -157,13 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "99_System/Templates/Daily Game v2.md",
+                "file": "99_System/Templates/Commander v1.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Daily Game v2"
+              "title": "Outline of Commander v1"
             }
           },
           {
@@ -191,10 +172,12 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 734.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
+      "quickadd:QuickAdd": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -202,33 +185,48 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "publish:Publish changes...": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "copilot:Open Copilot Chat": false
     }
   },
-  "active": "61921977ed2efab4",
+  "active": "a4493f8db67f18f5",
   "lastOpenFiles": [
-    "10_Journal/Daily.md",
-    "20_Efforts/Long Term Goals.md",
-    "99_System/Assets",
-    "99_System",
-    "30_Knowledge",
-    "20_Efforts/Short Term Goals.md",
-    "20_Efforts/Active Projects.md",
-    "10_Journal/Weekly.md",
-    "20_Efforts",
-    "Untitled.md",
-    "99_System/Templates/Daily Game v2.md",
-    "00_Inbox",
-    "Templates/Martial Arts.md",
-    "Templates/Daily Log.md",
-    "Cryptography.md",
-    "Daily Notes/2026-02-08.md",
-    "Templates/Cryptography.md",
-    "Daily Notes",
-    "99_System/Templates",
-    "Gaadha",
-    "10_Journal",
-    "Untitled.canvas",
-    "Welcome.md"
+    "20_Efforts/Long Term Goals/AI/Tasklist after purchasing either huge GPU or lot of ai API credits.md",
+    "10_Triffiny/Daily/2026/02-February/2026-02-11.md",
+    "10_Triffiny/Daily/2026/02-February/2026-02-10.md",
+    "10_Triffiny/Daily/2026/02-February/2026-02-09.md",
+    "00_Inbox/RAM.md",
+    "00_Inbox/Cold_Storage.md",
+    "30_Knowledge/Trading/QUANT/resource dump.md",
+    "30_Knowledge/Trading/QUANT",
+    "30_Knowledge/Trading/Software Aided trading.md",
+    "20_Efforts/Long Term Goals/AI/Premiums/Untitled.md",
+    "20_Efforts/Long Term Goals/AI/Premiums",
+    "20_Efforts/Long Term Goals/AI",
+    "30_Knowledge/Trading",
+    "copilot/copilot-conversations/how_to_add_a_collapsable_component_here@20260209_014903.md",
+    "copilot/copilot-conversations",
+    "10_Journal/Daily/2026/02-February/2026-02-08.md",
+    "99_System/Templates/Commander v1.md",
+    "99_System/Templates/New Innovation.md",
+    "copilot/copilot-custom-prompts/Clip Web Page.md",
+    "copilot/copilot-custom-prompts/Clip YouTube Transcript.md",
+    "copilot/copilot-custom-prompts/Rewrite as tweet thread.md",
+    "copilot/copilot-custom-prompts/Rewrite as tweet.md",
+    "copilot/copilot-custom-prompts/Remove URLs.md",
+    "copilot/copilot-custom-prompts/Generate glossary.md",
+    "copilot/copilot-custom-prompts/Generate table of contents.md",
+    "copilot/copilot-custom-prompts/Make longer.md",
+    "copilot/copilot-custom-prompts/Make shorter.md",
+    "copilot/copilot-custom-prompts/Emojify.md",
+    "copilot/copilot-custom-prompts/Explain like I am 5.md",
+    "copilot/copilot-custom-prompts/Simplify.md",
+    "copilot/copilot-custom-prompts/Summarize.md",
+    "copilot/copilot-custom-prompts",
+    "copilot",
+    "10_Triffiny/Daily/2026/02-February",
+    "10_Triffiny/Daily/2026",
+    "20_Efforts/Short Term Goals",
+    "Untitled.canvas"
   ]
 }

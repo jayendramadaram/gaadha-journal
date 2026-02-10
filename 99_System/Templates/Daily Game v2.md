@@ -22,7 +22,7 @@ mood: ""
 ## 🌅 Q1: Boot Sequence (06:00 - 10:00)
 *Focus: Rigorous Activation*
 - [ ] 🏋️ **Physical:** Rigorous exercise + Warmup
-- [ ] ♟️ **Cognitive:** 1 Chess Game (1+10) *No more after this*
+- [ ] ♟️ **Cognitive:** 1 Chess Game (1+10) *No more after this )
 - [ ] 📰 **Input:** News + Twitter + The Block
 - [ ] 🎯 **Priority:** Complete pending TO-DOs from yesterday
 
