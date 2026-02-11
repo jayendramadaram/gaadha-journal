@@ -176,7 +176,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 649.5
+    "width": 325.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -189,12 +189,13 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "publish:Publish changes...": false,
-      "obsidian-git:Open Git source control": false,
-      "copilot:Open Copilot Chat": false
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "7ff118175e4e3120",
   "lastOpenFiles": [
+    "Pasted image 20260211032027.png",
+    "Pasted image 20260211023959.png",
     "10_Journal/Daily/2026/02-February/2026-02-08.md",
     "10_Journal/Daily/2026/02-February",
     "10_Journal/Daily/2026",
