@@ -180,3 +180,176 @@ Layout Detection
 - Table Structure Recognition
 	- most important and could be our USP
 	- Granite-Docling-258M as the primary engine (best accuracy on financial tables), with TableTransformer as validation.
+	- Section Segmentation
+		- PURE DSA
+
+
+verification and validation
+- **Layout detection mAP** — target > 0.75 on DocLayNet-style evaluation. Run detector on the DocLayNet test set.
+- **Table structure TEDS** — target > 0.95 on FinTabNet.
+- manually annotate 10 annual reports with correct section boundaries. Compute precision/recall
+- Amount unit detection accuracy - human work - 100% accuracy
+
+
+If anything has issues, we can increase context and re run this pipeline, and we can use VLM assisted guided learning
+
+
+Phase 3: Structured Data Extraction - transforms messy OCR output into machine-readable financial data
+- PROVIDE ALL FUNCTION CALLING [important]
+- Indian Number Format Parsing
+- Financial Statement Extraction
+	- USE LLM's here, 
+	- there would be meta components like
+		- numbers, amounts which can be staticly checked against OCR outputs and we can cross verify LLM accuracy
+		- multiple runs is best
+		- file write pattern, and verision controll updates
+- Metadata Extraction
+- XBRL Processing with Arelle
+	- - All companies with paid-up capital ≥₹5 crore or turnover ≥₹100 crore MUST file in XBRL format with MCA - XBRL filings are STRUCTURED DATA 
+	- no OCR needed, exact values guaranteed 
+	- If a company has both a PDF annual report AND XBRL filing, we can cross-validate: extract from PDF, compare with XBRL, flag discrepancies
+
+
+# RAG & Compliance Knowledge Base
+- important thing - SECTION-AWARE chunking that preserves the regulatory hierarchy.
+	- Parse the document into its natural section hierarchy
+	- Each paragraph becomes one chunk
+	- Attach rich metadata for filtering during retrieval
+	- Generate contextual prefix
+
+- Embedding with BGE-M3
+	- 568M parameters, 1024 dimensions good balance of quality and speed
+	- Supports dense, sparse, AND multi-vector retrieval in one model
+
+We need to fine tune these embeddings at any cost, general purpose embeddings top generic benchmarks but perform flawed in real world compliance and legal embeddings
+
+so fine tuning is must (Open to explore any other model than BGE-M3)
+
+fine tune plan
+1. Collect regulatory query-passage pairs (e.g., "What are the disclosure requirements for contingent liabilities?"  IndAS 37, Para 86) 
+2. Use contrastive learning to fine-tune BGE-M3 on these pairs
+	1. self supervised type shit, learns from its own data
+3. Expected improvement: +10-30% retrieval accuracy on regulatory queries
+4. After fine tune encode all the chunks
+
+
+Qdrant 
+- Payload filtering
+- Real-time updates
+- When checking IndAS 24 compliance, we dont want to search across ALL regulations
+	- filter to IndAS 24 chunks first, then do vector similarity within that subset.
+
+
+Hybrid Search -  (BM25 + Dense)
+- BM25 - exact keyword search
+- Dense - in depth search for generic questions like : what are the rules for recognizing revenue from long-term contracts?
+- compute Reciprocal Rank Fusion
+
+
+Knowledge Graph for Cross-Regulatory Reasoning
+- get results + reasoning from multiple compliance dbs
+-
+
+Phase 5: Reasoning 
+
+GOALS
+1. Understand regulatory language precisely (not approximately)
+2. Apply rules to specific financial data (quantitative reasoning)
+3. Handle edge cases and exemptions (multi-hop logic)
+4. Explain its reasoning in auditable detail (not a black box)
+
+checks
+- presense checks
+- completeness checks
+- consistensy checks
+- threshold checks
+- format checks
+- cross refernce checks
+
+
+[ CHAIN THE RULE SET HARD AND THIS GOES INTO SYSTEM PROMPT ]
+
+
+Compliance Reasoning Agent
+- Retrieves relevant regulatory text from the knowledge base
+- Retrieves relevant sections from the target annual report
+- Reasons about whether the requirements are met
+- Generates a structured compliance verdict with evidence
+
+
+[ HUGE SYSTEM PROMPT AGAIN with compating ]
+
+
+
+### Multi-Agent Orchestration with LangGraph
+
+we have couple of models
+- ocr
+- layout
+- VLM
+- extraction
+- compliance
+- validation
+
+
+langraph
+- state machine with cycles
+- Built in persistence
+- tool calling
+- Document → OCR → Layout → Extraction → Compliance → Report
+- handles ERROR RECOVERY
+	- OCR confidence is low → retry with VLM fallback
+	- re run the flows
+
+
+
+all models
+- PaddleOCR PP-OCRv5 - 2M params
+- Docling - 258M
+- olmOCR-2 / LightOnOCR-2 - 1B
+
+- DocLayout-YOLO - ~100M
+- Granite-Docling-258M - 258M
+
+- Qwen2.5-VL-7B (QLoRA) - 7B
+
+- BGE-M3 (fine-tuned) - 568M
+
+- Qwen3-32B-AWQ - 32B (4-bit)
+
+- Reasoning DeepSeek-R1-Distill-32B 32B
+
+
+
+Other options
+TABLES
+- TableTransformer v1.1
+- **SPRINT**
+- PubTables-v2
+- **MultiDocFusion** (EMNLP 2025) constructs hierarchical trees from section headers using LLMs, then applies DFS-based grouping for coherent section chunks.
+- **UniHDSA** handles cross-page table grouping and TOC extraction at the document level.
+
+
+
+
+if using chinese open sourced models is prohiobited 
+- llama 3 or mistral
+- LLaVA or Pixtral - for vision
+- we can start with chinese models, since model architectures are same, we can swap them in and out
+
+
+
+DEEP REASONING 
+-  `PyMuPDF` or `pdfplumber` to extract URI annotations and link them to the text.
+- for scanned docs, hyperlink detectin is not possible haha
+
+
+Summarisation Agent
+- as part of reasoning agent
+
+
+
+Deepresearch agent
+- - Add a "External Signal Ingestion" module.
+- _Tech:_ A simple scraper (BeautifulSoup/Selenium) that feeds into the RAG pipeline.
+- news, enforcement actions... and whistle-blower allegations
