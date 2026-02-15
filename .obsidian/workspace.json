@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "70b7e0b5034952ae",
+        "id": "34d9476d106801f4",
         "type": "tabs",
         "children": [
           {
-            "id": "7ff118175e4e3120",
+            "id": "fc4f3f6266019793",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -192,23 +192,25 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7ff118175e4e3120",
+  "active": "fc4f3f6266019793",
   "lastOpenFiles": [
     "10_Triffiny/Daily/2026/02-February/2026-02-15.md",
     "20_Efforts/Pen - Projects/PROJECT JEAGERIST.md",
+    "99_System/Assets/Untitled",
+    "99_System/Assets/Pasted image 20260211023959.png",
+    "99_System/Assets/Pasted image 20260215171233.png",
+    "asset",
     "Untitled.md",
-    "Pasted image 20260215143436.png",
+    "99_System/Assets/Pasted image 20260215143436.png",
     "20_Efforts/Long Term Goals/AI/Tasklist after purchasing either huge GPU or lot of ai API credits.md",
     "20_Efforts/Pen - Projects",
-    "Untitled",
     "10_Triffiny/Daily/2026/02-February/2026-02-14.md",
     "10_Triffiny/Daily/2026/02-February/2026-02-13.md",
     "10_Triffiny/Daily/2026/02-February/2026-02-12.md",
     "10_Triffiny/Daily/2026/02-February/2026-02-11.md",
     "10_Triffiny/Daily/2026/02-February/2026-02-10.md",
     "10_Triffiny/Daily/2026/02-February/2026-02-09.md",
-    "Pasted image 20260211032027.png",
-    "Pasted image 20260211023959.png",
+    "99_System/Assets/Pasted image 20260211032027.png",
     "10_Journal/Daily/2026/02-February/2026-02-08.md",
     "10_Journal/Daily/2026/02-February",
     "10_Journal/Daily/2026",
@@ -222,7 +224,6 @@
     "20_Efforts/Long Term Goals/AI/Premiums/Untitled.md",
     "20_Efforts/Long Term Goals/AI/Premiums",
     "20_Efforts/Long Term Goals/AI",
-    "30_Knowledge/Trading",
     "copilot/copilot-conversations/how_to_add_a_collapsable_component_here@20260209_014903.md",
     "99_System/Templates/Commander v1.md",
     "99_System/Templates/New Innovation.md",
