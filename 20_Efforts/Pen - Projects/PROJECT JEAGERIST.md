@@ -37,7 +37,7 @@ For table structure recognition specifically, the stack should combine multiple 
 - **SPRINT**
 - PubTables-v2
 
-
+--------
 
 Perfect pipeline
 
@@ -89,7 +89,7 @@ Phase 6 (Integration + test)
 Hardware requirements - development
 - All other models are pretty cheap and easy peasy to run on regular hardware (8 gm ram, 200 gb storage, no gpu)
 	- but phase 4 , 5 are critical
-	- they need atleast 1 min and 2 max 4090's [ I have one so should be fine for experimenting ]
+	- they need atleast 1 min and 2 max 4090's [ I have one so should be fine for experimenting]
 	- runs easily - 7B VLM and 32B reasoning model
 - 64 GM ram - RAG fast memory for LLM's
 - 500 GB - just in case for data set 

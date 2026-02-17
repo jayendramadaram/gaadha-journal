@@ -1,19 +1,37 @@
 
 MIXNET goals for today
 
-- basic perfection
-	-  [x] relayer mode
-	-  [x] single exit node mode
-- migration (brainstorm here)
-	- we will pack mixnet node properly first
-	- then we will seperate darkpool client and mixnet client
-	- build mixnet client - test all web2 calls reads and writes 
-	- fixes to fragmenter etc etc do a personal audit
-	- then work on darkpool client which uses normal mode and mixnet mode as well
-		- this will be later used in solvers as well
-	- work on complete end to end integration 
-- bench mark entire mixnet in and out -  without web3 calls btw (web3 calls is just a added feature)
-- go ahead and build and work on blog
+- Mixnet migration is complete
+	- mixnet internal audit is pending
+	- mixnet benches are pending
+	- mixnet NYM loopix and k <> comparisions are pending
+		- tagging
+		- encription
+		- decoys
+		- surbs
+		- packet transmissions
+		- error correction
+		- network latencies
+		- possion delays
+		- concurrency benches
+		- throttle testing
+	- mixnet Blog is pending
+- Vipen research review and explore
+	- Black swan test
+	- simulations
+	- I still feel it is 0 risk and good chance money but we need lot of back testing and tracking
+	- Polymarket
+- Talk to Jay tmmrw about his strategy for proper launch
+- Basketball
+- Intel and strat
+- Poker Engine
+- write Gaadha
+
+
+4 : 30 - 7 : 30 - Mixnet Audit + Vipen explore
+7 : 30 - 8 : 30 - basket ball
+8 : 30 - 10 : 30 - Intel and strat
+10 : 30 - 3 : 30 - mixnets other parts - poker - gaadha
 
 
 
@@ -26,30 +44,6 @@ explore
 - julios 
 
 ---- 
-Research on desk top agent
-- grok - 2 versions
-- gemeni 2 versions
-- qwen
-- chatgpt
-- claude code
-- kimi k2
-
-1. https://ui-tarsai.com/
-2. https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-computer-use-model/
-
-lets manually audit codebase first
-
-
-things to fix in nox mixnet
-- local mesh is wrong
-- benches are not sufficient
-- data directory for sled, some day we should clean temp directory
-- price server and price client must be used in real world testing and scenario
-
-client issues
-- is fragmentation happening correct ?
-- whats the max payload we can send from client side with current code, and whats the max payload we can recieve from the mixnet
-
 
 
 Apply here.
@@ -69,3 +63,16 @@ https://x.com/search?q=mixnets&src=typed_query&f=live
 - ppt
 - grants research
 - read groks report it is intresting
+
+
+revisit for poker
+- https://claude.ai/chat/1a0bfa3a-592b-47a5-94ea-2ec23d9db5c9
+- https://gemini.google.com/app/8ecafabbb82f5aa3
+- https://gemini.google.com/app/7ee75e8b23c29f25
+- https://grok.com/c/6dab6ecc-66a5-4495-af1c-153737efb64e?rid=86089ef1-cd68-4eea-a2bd-b6c1aaecc985
+
+
+
+- temp apps 
+	- perps
+		- zcash
