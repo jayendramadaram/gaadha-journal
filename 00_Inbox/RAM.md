@@ -1,37 +1,36 @@
 
-MIXNET goals for today
+Xythum
+- take mixnet to mainnet ready
+	- text Igor, ali, andy 
+	- make everything open sourced
+	- proper bench marked against NYM, Loopix 
+	- Complete end to end proper decent blog about it
+	- Jay proof read
+- Complete internal End to End audit
+- Take mixnet to live and Initial PR 
+- Talk with Jay about his strategy
 
-- Mixnet migration is complete
-	- mixnet internal audit is pending
-	- mixnet benches are pending
-	- mixnet NYM loopix and k <> comparisions are pending
-		- tagging
-		- encription
-		- decoys
-		- surbs
-		- packet transmissions
-		- error correction
-		- network latencies
-		- possion delays
-		- concurrency benches
-		- throttle testing
-	- mixnet Blog is pending
-- Vipen research review and explore
-	- Black swan test
-	- simulations
-	- I still feel it is 0 risk and good chance money but we need lot of back testing and tracking
-	- Polymarket
-- Talk to Jay tmmrw about his strategy for proper launch
-- Basketball
+Body
+- Make 40 three pointers - 10 per day
+- make 80 two pointers - 20 per day
+- make 120 layups - 30 per day
+- make 100 pushups per day - 400 per week
+- make 100 crunches per day - 400 per week
+- bath everyday
+
+Hedging
+- Vipen, strategy analysis
+- Build a decent bot
+- Poker Game build
+
+AI
+- build you
+
+
+Chores
 - Intel and strat
-- Poker Engine
-- write Gaadha
+- write Gaadha - everyday
 
-
-4 : 30 - 7 : 30 - Mixnet Audit + Vipen explore
-7 : 30 - 8 : 30 - basket ball
-8 : 30 - 10 : 30 - Intel and strat
-10 : 30 - 3 : 30 - mixnets other parts - poker - gaadha
 
 
 
